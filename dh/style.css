@@ -1,0 +1,225 @@
+@keyframes sec {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.navbg{background: url(bg10.jpg) no-repeat top center;
+  background-size: cover;z-index: -1;width: 100%;height: 100%;display: block;position: absolute; top: 0px;animation: sec 10s infinite linear;}
+.cd-nav-trigger {
+  position: fixed;
+  z-index: 9999993;
+  right: 30px;
+  height: 43px;
+  width: 43px;
+  top: 30px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  -webkit-transition: -webkit-transform 0.2s;
+  -moz-transition: -moz-transform 0.2s;
+  transition: transform 0.2s;
+  background: #019444;
+  color: #fff;
+  transition: all .3s;
+}
+.cd-nav-trigger:hover{
+  background: #1795e2;
+}
+.cd-nav-trigger span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 25px;
+  height: 3px;
+  background-color:#fff;
+}
+.cd-nav-trigger span::before, .cd-nav-trigger span:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.2s, width 0.2s;
+  -moz-transition: -moz-transform 0.2s, width 0.2s;
+  transition: transform 0.2s, width 0.2s;
+}
+.cd-nav-trigger span::before {
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.cd-nav-trigger span::after {
+  -webkit-transform-origin: right bottom;
+  -moz-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  -o-transform-origin: right bottom;
+  transform-origin: right bottom;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+}
+
+.cd-nav-container {
+  position: fixed;
+  z-index: 99999999999;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.4s 0s, box-shadow 0s 0.4s;
+  -moz-transition: -moz-transform 0.4s 0s, box-shadow 0s 0.4s;
+  transition: transform 0.4s 0s, box-shadow 0s 0.4s;
+  overflow: hidden;
+}
+.cd-nav-container.is-visible {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-overflow-scrolling: touch;
+  box-shadow: -4px 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-transform 0.4s 0s, box-shadow 0s 0s;
+  -moz-transition: -moz-transform 0.4s 0s, box-shadow 0s 0s;
+  transition: transform 0.4s 0s, box-shadow 0s 0s;
+}
+.ynav{height: 500px;position: absolute;top: 0;bottom: 0;margin: auto;left: 0;right: 0;width: 910px;}
+.ynav  .fr p{line-height: 30px;color: #fff;text-align: right;margin-top: 50px;}
+.cd-nav-container header {
+  padding: 0 0 0 1.25%;
+  position: relative;
+}
+.cd-nav-container h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #5c4b51;
+}
+
+.cd-close-nav {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  right: 30px;
+  top: 30px;
+  bottom: auto;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: #019444;
+  transition: .3s;
+}
+.cd-close-nav:hover{background: #1795e2;}
+.cd-close-nav::after, .cd-close-nav::before {
+  /* lines of 'X' icon */
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 32px;
+  left: 50%;
+  top: 50%;
+  background-color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-close-nav::after {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.cd-close-nav::before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+.cd-nav::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cd-nav {height: 100%;width: 50%;}
+.cd-nav li {
+  width: 100%;
+  float: left;
+  height: 12.5%;
+  transition: all .3s;
+  line-height: 200%;
+  font-size: 2rem;
+}
+.cd-nav li:hover{
+  background: -moz-linear-gradient(left, #0094e8 0%, #13c33a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0094e8), color-stop(100%,#13c33a));
+  background: -webkit-linear-gradient(left, #0094e8 0%,#13c33a 100%);
+  background: -o-linear-gradient(left, #0094e8 0%,#13c33a 100%);
+  background: -ms-linear-gradient(left, #0094e8 0%,#13c33a 100%);
+  background: linear-gradient(to right, #0094e8 0%,#13c33a 100%);
+}
+.cd-nav a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  font-size: 1.8rem;
+  padding-left: 100px;
+  color: #fff;
+}
+.cd-nav a:hover, .cd-nav li a:hover i{
+  color: #fff;
+}
+.cd-nav li a i{
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.3);
+}
