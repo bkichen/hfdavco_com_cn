@@ -1,0 +1,216 @@
+section {
+  padding-top: 96px;
+  margin-top: -96px; }
+
+.title2 {
+  text-align: center; }
+  .title2 .container {
+    width: 100%;
+    margin: 0 auto; }
+  .title2 h3 {
+    font-size: 30px;
+    color: #131313;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: axis; }
+  .title2 b {
+    font-size: 24px;
+    color: #28a85d;
+    display: block;
+    margin-bottom: 20px; }
+  .title2 p {
+    font-size: 16px;
+    color: #666;
+    margin: 2px 0 20px; }
+  .title2 span {
+    color: #666; }
+  .title2 a {
+    display: block;
+    margin: 50px auto 0;
+    width: 170px;
+    height: 45px;
+    border: 2px solid #ccc;
+    text-transform: uppercase;
+    font-family: axis;
+    font-weight: 700;
+    text-align: center;
+    line-height: 47px;
+    color: #131313;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    transition: .5s; }
+    .title2 a:hover {
+      color: #50372d;
+      border: 2px solid #50372d; }
+
+.about-body .banner {
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 550px;
+  position: relative; }
+  .arrST{z-index:2;position:absolute;width:100%;bottom:50px;left:0}
+  .arrST_con{margin:0 auto;width:24px}
+  .container{position:relative;width:24px;height:24px}
+  .chevron{position:absolute;width:28px;height:8px;opacity:0;transform:scale3d(.5,.5,.5);animation:move 3s ease-out infinite}
+  .chevron:first-child{animation:move 3s ease-out 1s infinite}
+  .chevron:nth-child(2){animation:move 3s ease-out 2s infinite}
+  .chevron:after,.chevron:before{content:' ';position:absolute;top:0;height:100%;width:51%;background:#fff}
+  .chevron:before{left:0;transform:skew(0deg,30deg)}
+  .chevron:after{right:0;width:50%;transform:skew(0deg,-30deg)}
+  @keyframes move{0%{opacity:0}
+  25%{opacity:1}
+  33%{opacity:1;transform:translateY(30px)}
+  67%{opacity:1;transform:translateY(40px)}
+  100%{opacity:0;transform:translateY(55px) scale3d(.5,.5,.5)}
+  }
+  @keyframes scaleST{0%{transform:scale(1,1);-ms-transform:scale(1,1);-moz-transform:scale(1,1);-webkit-transform:scale(1,1);-o-transform:scale(1,1)}
+  50%{transform:scale(0,1);-ms-transform:scale(0,1);-moz-transform:scale(0,1);-webkit-transform:scale(0,1);-o-transform:scale(0,1)}
+  100%{transform:scale(1,1);-ms-transform:scale(1,1);-moz-transform:scale(1,1);-webkit-transform:scale(1,1);-o-transform:scale(1,1)}
+  }
+.about-body .about-str {
+  margin: 70px 0; }
+  .about-body .about-str .about-str-num {
+    margin-top: 50px; }
+    .about-body .about-str .about-str-num li {
+      text-align: center;
+      width: 200px;
+      height: 100px;
+      position: relative;
+      margin-left: 300px; }
+      .about-body .about-str .about-str-num li:first-child {
+        margin-left: 0; }
+      .about-body .about-str .about-str-num li:nth-of-type(2) img {
+        right: 15px; }
+      .about-body .about-str .about-str-num li h3 {
+        color: #131313;
+        font-size: 60px;
+        margin: 0;
+        font-family: adam !important; }
+      .about-body .about-str .about-str-num li p {
+        margin-top: 20px;
+        color: #666;
+        font-size: 16px; }
+.about-body .about-factory {
+  background-image: url(aimg/about-factory.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 639px; }
+.about-body .about-yage {
+  background-image: url(aimg/about-yage.jpg);
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  height: 533px; }
+  .about-body .about-yage .g-container {
+    position: relative; }
+  .about-body .about-yage .about-yage-title h3 {
+    color: #131313;
+    font-size: 48px;
+    margin: 0;
+    padding-top: 100px;
+    font-family: axis; }
+  .about-body .about-yage .about-yage-title p {
+    color: #666;
+    font-size: 30px;
+    margin-bottom: 30px; }
+  .about-body .about-yage .about-yage-img {
+    position: absolute;
+    top: 100px;
+    right: 0; }
+  .about-body .about-yage .swiper {
+    width: 720px;
+    position: relative;
+    overflow: hidden; }
+    .about-body .about-yage .swiper .swiper-container {
+      height: 200px; }
+.about-body .about-culture {
+  background-image: url(aimg/about-culture.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 513px;
+  padding-top: 100px; }
+  .about-body .about-culture .about-culture-title {
+    width: 700px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center; }
+    .about-body .about-culture .about-culture-title h3 {
+      font-size: 30px;
+      font-family: axis;
+      margin: 0;
+      text-transform: uppercase;
+      color: #fff; }
+    .about-body .about-culture .about-culture-title p {
+      font-size: 24px;
+      margin: 0 0 30px;
+      color: #fff; }
+  .about-body .about-culture .about-culture-list {
+    width: 980px;
+    margin: 50px auto 0;
+    color: #fff; }
+    .about-body .about-culture .about-culture-list li {
+      width: 245px;
+      text-align: center; }
+      .about-body .about-culture .about-culture-list li span {
+        font-size: 36px;
+        margin: 0 auto;
+        display: block;
+        width: 82px;
+        height: 82px;
+        text-align: center;
+        line-height: 82px;
+        background-image: url(aimg/about-culture-bg.png);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        color: #fff; }
+      .about-body .about-culture .about-culture-list li h4 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: 15px 0;
+        color: #fff; }
+      .about-body .about-culture .about-culture-list li p {
+        color: #fff; }
+
+.about-body .about-yage .swiper .swiper-button-next, .about-body .about-yage .swiper .swiper-button-prev {
+  width: 33px;
+  height: 33px;
+  -moz-background-size: 33px 33px;
+  background-size: 33px 33px; }
+
+.about-body .about-yage .swiper .swiper-button-next, .about-body .about-yage .swiper .swiper-container-rtl .swiper-button-prev {
+  background-image: url(aimg/about-next.png);
+  top: 175px;
+  left: 60px;
+  right: auto; }
+
+.about-body .about-yage .swiper .swiper-button-prev, .about-body .about-yage .swiper .swiper-container-rtl .swiper-button-next {
+  background-image: url(aimg/about-prev.png);
+  top: 175px;
+  left: 0;
+  right: auto; }
+
+.about-body .about-history .about-history-swiper .swiper-button-next, .about-body .about-history .about-history-swiper .swiper-button-prev {
+  width: 27px;
+  height: 27px;
+  -moz-background-size: 27px 27px;
+  background-size: 27px 27px; }
+
+.about-body .about-history .about-history-swiper .swiper-button-next, .about-body .about-history .about-history-swiper .swiper-container-rtl .swiper-button-prev {
+  background-image: url(aimg/about-history-next.png); }
+
+.about-body .about-history .about-history-swiper .swiper-button-prev, .about-body .about-history .about-history-swiper .swiper-container-rtl .swiper-button-next {
+  background-image: url(aimg/about-history-prev.png); }
+
+.about-body .about-honor .about-honor-swiper .swiper-button-next, .about-body .about-honor .about-honor-swiper .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  -moz-background-size: 50px 50px;
+  background-size: 50px 50px; }
+
+.about-body .about-honor .about-honor-swiper .swiper-button-next, .about-body .about-honor .about-honor-swiper .swiper-container-rtl .swiper-button-prev {
+  background-image: url(aimg/pro-next.png); }
+
+.about-body .about-honor .about-honor-swiper .swiper-button-prev, .about-body .about-honor .about-honor-swiper .swiper-container-rtl .swiper-button-next {
+  background-image: url(aimg/pro-prev.png); }
+
+/*# sourceMappingURL=about.css.map */
